@@ -10,11 +10,11 @@ let block = document.createElement('div');
   block.style.display = 'flex';
 
 let blockInner = document.createElement('div');
-blockInner.className = 'block__inner--js';
-blockInner.style.margin = 'auto';
-blockInner.style.height = '100px';
-blockInner.style.width = '100px';
-blockInner.style.backgroundColor = '#ff7c7c';
+  blockInner.className = 'block__inner--js';
+  blockInner.style.margin = 'auto';
+  blockInner.style.height = '100px';
+  blockInner.style.width = '100px';
+  blockInner.style.backgroundColor = '#ff7c7c';
 
 block.append(blockInner);
 container.append(block);

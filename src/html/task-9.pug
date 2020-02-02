@@ -2,9 +2,9 @@ doctype html
 html(lang='ru')
   head
     meta(charset="utf-8")
-    title TASK 8
+    title INDEX
     link(href='main.css', rel='stylesheet', type='text/css')
-    script(src="task-7.js" defer)
+    script(src="task-9.js" defer)
   body
     include mixins
     .wrapper
@@ -17,13 +17,9 @@ html(lang='ru')
           +header_nav('4', './task-4.html', false)
           +header_nav('5', '#', false)
           +header_nav('6', '#', false)
-          +header_nav('7', '#', true)
+          +header_nav('7', './task-7.html', false)
           +header_nav('8', './task-8.html', false)
-          +header_nav('9', './task-9.html', false)
+          +header_nav('9', '#', true)
       section.task
-        h2.task__title seventh task
-        .task__container
-          .block--css
-            .block__inner--css
-          .block--html(style='margin:auto; height: 300px; width: 300px; background-color: #4a4a4a; display: flex; flex-direction: column; justify-content: center; align-items: center;')
-            .block__inner--html(style='height: 100px; width: 100px; background-color: #ff7c7c;')
+        h2.task__title eighth task
+        .task__container(style='flex-wrap: wrap')
