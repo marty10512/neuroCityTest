@@ -12,7 +12,7 @@ function randomColor(){
   return color;
 }
 
-let container = document.querySelector('.task__container');
+let container = document.querySelector('.task__container--ninth');
 
 function createBlocks(){
   let n = roll(10, 100);
