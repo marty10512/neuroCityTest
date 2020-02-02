@@ -1,0 +1,46 @@
+.wrapper
+  max-width 1080px
+  margin 0 auto
+  padding-top 20px
+  font-family 'Arial'
+  color #4a4a4a
+
+.header
+  display flex
+  flex-direction column
+
+.header__title
+  text-transform capitalize
+
+.header__navigation
+  display flex
+  flex-direction row
+  list-style none
+  justify-content space-between
+
+.header__navigation-item
+  width 30px
+  height 30px
+
+.header__navigation-link
+  text-decoration none
+  font-size 20px
+  line-height 30px
+  color #787878
+  transition .3s
+  &:hover
+    color #90cf70
+
+.active
+  .header__navigation-link
+    color #90cf70
+    cursor default
+
+.task
+  width 100%
+  min-height calc(100vh - 142px)
+  display flex
+  flex-direction column
+
+.task__title
+  text-transform uppercase

@@ -1,0 +1,51 @@
+.slider
+  margin auto 0
+  display flex
+  flex-direction row
+  justify-content center
+  position relative
+
+.slider__btn
+  position absolute
+  border 20px solid transparent
+  border-right-color #4a4a4a
+  top 50%
+  transform translateY(-50%)
+  transition .3s
+  cursor pointer
+  &--prev
+    left 100px
+  &--next
+    right 100px
+    transform translateY(-50%) rotate(180deg)
+  &:hover
+    border-right-color #aaa
+  
+.slider__block
+  position relative
+  width 400px
+  height 300px
+  overflow hidden
+
+.slider__list
+  position absolute
+  top 0
+  left -1200px
+  list-style none
+  display flex
+  flex-direction row
+  padding 0
+  margin 0
+  transition .3s
+
+.slider__item
+  width 400px
+  height 300px
+  &--first
+    background-color #6766ff
+  &--second
+    background-color #b9dbff
+  &--third
+    background-color #ff7c7c
+  &--fourth
+    background-color #90cf70

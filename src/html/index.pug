@@ -1,0 +1,45 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset="utf-8")
+    title INDEX
+    link(href='main.css', rel='stylesheet', type='text/css')
+    script(src="main.min.js" defer)
+  body
+    include mixins
+    .wrapper
+      .header
+        h1.header__title tasks:
+        ul.header__navigation
+          +header_nav('1', '#', true)
+          +header_nav('2', '#', false)
+          +header_nav('3', '#', false)
+          +header_nav('4', '#', false)
+          +header_nav('5', '#', false)
+          +header_nav('6', '#', false)
+          +header_nav('7', '#', false)
+          +header_nav('8', '#', false)
+          +header_nav('9', '#', false)
+      section.task
+        h2.task__title first task
+        .slider
+          .slider__btn.slider__btn--prev
+          .slider__block
+            ul.slider__list
+              li.slider__item.slider__item--first
+              li.slider__item.slider__item--second
+              li.slider__item.slider__item--third
+              li.slider__item.slider__item--fourth
+              li.slider__item.slider__item--first
+              li.slider__item.slider__item--second
+              li.slider__item.slider__item--third
+              li.slider__item.slider__item--fourth
+              li.slider__item.slider__item--first
+              li.slider__item.slider__item--second
+              li.slider__item.slider__item--third
+              li.slider__item.slider__item--fourth
+              li.slider__item.slider__item--first
+              li.slider__item.slider__item--second
+              li.slider__item.slider__item--third
+              li.slider__item.slider__item--fourth
+          .slider__btn.slider__btn--next

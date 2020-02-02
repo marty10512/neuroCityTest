@@ -1,0 +1,7 @@
+mixin header_nav(number, href, active)
+  if(active)
+    li.header__navigation-item.active
+        a.header__navigation-link(href= href)= number
+  else
+    li.header__navigation-item
+        a.header__navigation-link(href= href)= number

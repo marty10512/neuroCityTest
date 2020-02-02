@@ -61,9 +61,9 @@ gulp.task('watch', () => {
   browserSync.init(['dist/*.css', 'dist/*.html'],{
     server: "./dist/"
   });
-  gulp.watch('src/css/*.styl', series('clear-css', 'styl'));
-  gulp.watch('src/html/*.pug', series('clear-html', 'pug'));
-  gulp.watch('src/js/*.js', series('clear-js', 'js'));
+  gulp.watch('src/css/*.styl', gulp.series('clear-css', 'styl'));
+  gulp.watch('src/html/*.pug', gulp.series('clear-html', 'pug'));
+  gulp.watch('src/js/*.js', gulp.series('clear-js', 'js'));
   gulp.watch('dist/*.html').on("change", reload);
 })
 
