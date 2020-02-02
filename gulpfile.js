@@ -31,13 +31,6 @@ gulp.task('pug',() => {
 gulp.task('js', () => {
   return gulp.src('src/js/*.js')
   .pipe(plumber())
-  .pipe(concat('main.js'))
-  .pipe(minify({
-    ext:{
-      source: '',
-      min:'.min.js'
-  }
-  }))
   .pipe(gulp.dest('dist'))
 })
 
