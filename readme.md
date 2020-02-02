@@ -12,4 +12,4 @@ $ gulp
 
 ## GitHub Pages
 
-  https://marty10512.github.io/neuroCityTest/
+  https://marty10512.github.io/neuroCityTest/dist
